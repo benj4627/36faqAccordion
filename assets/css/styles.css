@@ -79,17 +79,28 @@ main {
 
 .container {
     margin: 0 auto;
-    max-width: 40vw;
+    max-width: 50vw;
     background: white;
-    border-radius: 30px;
+    border-radius: 20px;
     min-height: 60vh;
     padding: var(--largeSpacing);
+}
+
+.container h1, h2 {
+    color: var(--DarkPurple);
 }
 
 .faqText {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: var(--standardSpacing);
+}
+
+.faqText h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0 1rem;
 }
 
 
