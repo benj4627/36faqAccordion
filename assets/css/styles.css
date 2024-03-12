@@ -62,8 +62,10 @@ font: inherit;
 /* main container styling and background */
 
 .background {
-    background-image: url(../images/background-pattern-desktop.svg);
-    height: 30vh;
+    background-image: url(../images/background-pattern-desktop.svg); 
+    height: 40vh;
+    background-size: cover;
+    background-position: fill;
     min-width: 100vw;
 }
 main {
@@ -73,17 +75,14 @@ main {
     height: 100vh;
 }
 
-.accordionContent {
-    display: none;
-}
-
 .container {
     margin: 0 auto;
-    max-width: 50vw;
+    min-width: 50vw;
     background: white;
     border-radius: 20px;
-    min-height: 60vh;
+    min-height: fit-content;
     padding: var(--largeSpacing);
+    transition: .3s ease-in-out;
 }
 
 .container h1, h2 {
@@ -103,7 +102,36 @@ main {
     margin: 0 1rem;
 }
 
+.accordion {
+    display: flex;
+    flex-direction: column;
+  }
 
+.accordion h2 {
+    font-weight: 600;
+    transition: .2s ease-in-out;
+}
+
+.accordion h2:hover {
+    color: rgb(221, 13, 221);
+}
+
+.accordionTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+    border-bottom: 1px solid  hsla(293, 16%, 49%, 0.459);
+}
+
+.accordionContent {
+    color: var(--GrayishPurple);
+    display: none;
+}
+
+.accordionTitle.active .accordionContent {
+    display: block;
+}
 
 
 
