@@ -20,6 +20,7 @@
 body {
     min-height: 100vh;
     font-family: "Work Sans", sans-serif;
+    background-color: var(--LightPink);
 }
 
 a {
@@ -33,10 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-    text-wrap: balance;
     font-weight: normal;
-    
-
 }
 
 p {
@@ -60,6 +58,42 @@ input,
 form {
 font: inherit;
 }
+
+/* main container styling and background */
+
+.background {
+    background-image: url(../images/background-pattern-desktop.svg);
+    height: 30vh;
+    min-width: 100vw;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.accordionContent {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 40vw;
+    background: white;
+    border-radius: 30px;
+    min-height: 60vh;
+    padding: var(--largeSpacing);
+}
+
+.faqText {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
 
 
 /* # Front-end Style Guide
