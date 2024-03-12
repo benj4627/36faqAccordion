@@ -83,6 +83,7 @@ main {
     min-height: fit-content;
     padding: var(--largeSpacing);
     transition: .3s ease-in-out;
+    box-shadow: 0 0 20px #2f153360;
 }
 
 .container h1, h2 {
