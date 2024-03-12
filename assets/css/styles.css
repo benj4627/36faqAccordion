@@ -77,12 +77,12 @@ main {
 
 .container {
     margin: 0 auto;
-    min-width: 50vw;
+    min-width: 40vw;
     background: white;
     border-radius: 20px;
-    min-height: fit-content;
+    height: fit-content;
     padding: var(--largeSpacing);
-    transition: .3s ease-in-out;
+    transition: .2s ease-in-out;
     box-shadow: 0 0 20px #2f153360;
 }
 
@@ -103,57 +103,35 @@ main {
     margin: 0 1rem;
 }
 
-.accordion {
-    display: flex;
-    flex-direction: column;
-  }
-
 .accordion h2 {
     font-weight: 600;
     transition: .2s ease-in-out;
+    font-size: 1.2rem;
 }
 
 .accordion h2:hover {
     color: rgb(221, 13, 221);
+    cursor: pointer;
 }
 
 .accordionTitle {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 1em 0;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0;
     border-bottom: 1px solid  hsla(293, 16%, 49%, 0.459);
 }
 
 .accordionContent {
     color: var(--GrayishPurple);
-    display: none;
+    margin-top: var(--standardSpacing);
+    max-width: 40vw;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in;
 }
 
 .accordionTitle.active .accordionContent {
-    display: block;
+    max-height: 500px;
 }
-
-
-
-/* # Front-end Style Guide
-
-## Colors
-
-- White: hsl(0, 0%, 100%)
-- Light pink: hsl(275, 100%, 97%)
-- Grayish purple: hsl(292, 16%, 49%)
-- Dark purple: hsl(292, 42%, 14%)
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraphs): 16px
-
-### Font
-
-- Family: [Work Sans](https://fonts.google.com/specimen/Work+Sans)
-- Weights: 400, 600, 700
-
-> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. */
