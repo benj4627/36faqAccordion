@@ -127,7 +127,7 @@ main {
 .accordionContent {
     color: var(--GrayishPurple);
     margin-top: var(--standardSpacing);
-    max-width: 42vw;
+    max-width: 35vw;
     max-height: 0;
     overflow: hidden;
     transition: 0.3s ease-in-out;
@@ -138,5 +138,5 @@ main {
 }
 
 .accordionTitle.active .accordionContent {
-    max-height: 500px;
+    max-height: 300px;
 }
