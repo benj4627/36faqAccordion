@@ -1,4 +1,15 @@
 /* reset template */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --LightPink: hsl(275, 100%, 97%);
+    --GrayishPurple: hsl(292, 16%, 49%);
+    --DarkPurple: hsl(292, 42%, 14%);
+    --stndSpacing: 1em;
+    --largeSpacign: 2em; 
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,10 +19,12 @@
 
 body {
     min-height: 100vh;
+    font-family: "Work Sans", sans-serif;
 }
 
 a {
     text-decoration: none;
+    
 }
 
 h1,
@@ -22,6 +35,8 @@ h5,
 h6 {
     text-wrap: balance;
     font-weight: normal;
+    
+
 }
 
 p {
@@ -45,3 +60,26 @@ input,
 form {
     font: inherit;
 }
+
+
+/* # Front-end Style Guide
+
+## Colors
+
+- White: hsl(0, 0%, 100%)
+- Light pink: hsl(275, 100%, 97%)
+- Grayish purple: hsl(292, 16%, 49%)
+- Dark purple: hsl(292, 42%, 14%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraphs): 16px
+
+### Font
+
+- Family: [Work Sans](https://fonts.google.com/specimen/Work+Sans)
+- Weights: 400, 600, 700
+
+> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. */
