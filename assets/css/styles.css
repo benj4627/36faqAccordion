@@ -127,7 +127,7 @@ main {
 .accordionContent {
     color: var(--GrayishPurple);
     margin-top: var(--standardSpacing);
-    max-width: 40vw;
+    max-width: 42vw;
     max-height: 0;
     overflow: hidden;
     transition: 0.3s ease-in-out;
